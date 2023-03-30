@@ -39,7 +39,12 @@ function DividendBoard() {
             </div>
             <div>
                 <div>
-                    <Text>콜라라도</Text>vs<Text>미네소타와일드</Text>
+                    <Text 
+                    ellipsis className='league-table-group'>
+                        <Text className='league-table-l'>토르페도 N.노브고로드</Text>
+                        <span>vs</span>
+                        <Text className='league-table-r'>SKA 상트페테르부르크</Text>
+                    </Text>
                 </div>
                 <Radio.Group buttonStyle="solid" className='d-b-btn-group'>
                     <Radio.Button value="a" className='d-b-btn'>

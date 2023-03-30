@@ -242,7 +242,7 @@ a{
 }
 /* DividendBoard */
 .DividendBoard{
-    padding: 0 16px;
+    padding: 15px 16px;
 }
 .DividendBoard .nation{
     /* color: red; */
@@ -314,6 +314,41 @@ a{
     margin-left: 5px;
     color: rgb(238, 238, 238);;
 }
+.d-b-board .league-table-group{
+    width: calc(100% - 32px);
+    margin: 5px 0 0 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #eee;
+}
+.d-b-board .league-table-group span{
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #eee;
+}
+.d-b-board .league-table-l::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/그룹 6850.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(5px);
+}
+.d-b-board .league-table-r::before{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/그룹 6851.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(5px);
+}
 .d-b-board .d-b-btn-group{
     display: flex;
     width: 100%;
@@ -341,4 +376,63 @@ a{
 }
 .d-b-num{
     color: #FFCC00;
+}
+/* BottomBar */
+.BottomBar{
+    width: 100%;
+    height: 62px;
+    border-top: 1px solid #2D374580;
+    background-color: #1C202B;
+    position: fixed;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    font-size: 10px;
+    color: #6F777E;
+    text-align: center;
+}
+.main-btn, .pre-btn, .his-btn, .menu-bnt{
+    text-align: center;
+}
+.BottomBar .main-btn::before{
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url('../img/그룹 6966.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.BottomBar .pre-btn::before{
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url('../img/그룹 6962.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.BottomBar .his-btn::before{
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url('../img/그룹 17857.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.BottomBar .menu-btn::before{
+    margin: 0 auto;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url('../img/그룹 6958.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
 }

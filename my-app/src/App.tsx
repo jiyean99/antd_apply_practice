@@ -8,7 +8,7 @@ import NoticeBar from './main/NoticeBar';
 import MatchTab from './main/MatchTab';
 import MainBanner from './main/MainBanner';
 import DividendBoard from './main/DividendBoard';
-
+import BottomBar from './main/BottomBar'
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
       <DividendBoard />
       <DividendBoard />
       <DividendBoard />
+      <BottomBar />
     </div>
   );
 }
