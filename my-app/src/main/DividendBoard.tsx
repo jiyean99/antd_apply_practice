@@ -43,31 +43,31 @@ function DividendBoard() {
                 </div>
                 <Radio.Group buttonStyle="solid" className='d-b-btn-group'>
                     <Radio.Button value="a" className='d-b-btn'>
-                        홈 승<span>1.93</span>
+                        <span>홈 승</span><span className='d-b-num'>1.93</span>
                     </Radio.Button>
                     <Radio.Button value="b" className='d-b-btn'>
-                        무<span>1.93</span>
+                        <span>무</span><span className='d-b-num'>1.93</span>
                     </Radio.Button>
                     <Radio.Button value="c" className='d-b-btn'>
-                        1.93<span>원정 승</span>
+                        <span className='d-b-num'>1.93</span><span>원정 승</span>
                     </Radio.Button>
                     <Radio.Button value="d" className='d-b-btn'>
-                        홈 승<span>1.93</span>
+                        <span>홈 승</span><span className='d-b-num'>1.93</span>
                     </Radio.Button>
                     <Radio.Button value="e" className='d-b-btn'>
-                        H<span>0.5</span>
+                        <span>H</span><span>0.5</span>
                     </Radio.Button>
                     <Radio.Button value="f" className='d-b-btn'>
-                        1.93<span>원정 승</span>
+                        <span className='d-b-num'>1.93</span><span>원정 승</span>
                     </Radio.Button>
                     <Radio.Button value="g" className='d-b-btn'>
-                        언더<span>1.18</span>
+                        <span>언더</span><span className='d-b-num'>1.18</span>
                     </Radio.Button>
                     <Radio.Button value="h" className='d-b-btn'>
-                        U/O<span>2.5</span>
+                        <span>U/O</span><span >2.5</span>
                     </Radio.Button>
                     <Radio.Button value="i" className='d-b-btn'>
-                        1.93<span>오버</span>
+                        <span className='d-b-num'>1.93</span><span>오버</span>
                     </Radio.Button>
                 </Radio.Group>
             </div>

@@ -331,9 +331,14 @@ a{
     font-size: 10px;
     font-weight: 600;
     line-height: 36px;
-    /* display: flex;
-    justify-content: space-between; */
+}
+.d-b-board .d-b-btn span{
+    display: flex;
+    justify-content: space-between;
 }
 .ant-radio-button-wrapper:not(:first-child)::before{
     display: none;
+}
+.d-b-num{
+    color: #FFCC00;
 }

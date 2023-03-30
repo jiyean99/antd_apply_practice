@@ -18,12 +18,9 @@ function App() {
       <MatchTab />
       <MainBanner />
       <DividendBoard />
-      <div
-      style={{
-        width:'100%',
-        height:'2000px',
-        backgroundColor:'rgba(0,0,0,0.6)'
-      }}/>
+      <DividendBoard />
+      <DividendBoard />
+      <DividendBoard />
     </div>
   );
 }
