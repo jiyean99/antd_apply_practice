@@ -59,7 +59,7 @@ function MatchTab() {
                     padding: '0 9px',
                 }}
             >
-                <Radio.Group defaultValue="a">
+                <Radio.Group buttonStyle="solid" defaultValue="a">
                     <Radio.Button 
                         value="a"
                         style={{
