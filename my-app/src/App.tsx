@@ -7,6 +7,7 @@ import ClubNotice from './main/ClubNotice'
 import NoticeBar from './main/NoticeBar'
 import MatchTab from './main/MatchTab'
 import MainBanner from './main/MainBanner'
+import DividendBoard from './main/DividendBoard'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ClubNotice />
       <MatchTab />
       <MainBanner />
+      <DividendBoard />
       <div
       style={{
         width:'100%',

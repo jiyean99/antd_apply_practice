@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 // import "swiper/css";
-import "swiper/dist/css/swiper.css"
+// import "swiper/dist/css/swiper.css"
 // import 'swiper/swiper.scss';
 // import 'swiper/css/swiper.css';
 
@@ -16,8 +16,16 @@ import "swiper/dist/css/swiper.css"
 
 function MainBanner() {
   return (
+    // swiper 경로 오류로 인해 크기만 맞춰놓고 수정 예정
     <div className="MainBanner">
-      <section id="banner">
+      <div
+        style={{
+          width:'100%',
+          height:'360px',
+          backgroundColor:'#ffffff50',
+        }}
+      />
+      {/* <section id="banner">
         <Swiper className="mySwiper">
           <SwiperSlide>Slide 1</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
@@ -29,7 +37,7 @@ function MainBanner() {
           <SwiperSlide>Slide 8</SwiperSlide>
           <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
-      </section>
+      </section> */}
     </div>
   );
 }
