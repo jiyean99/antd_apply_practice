@@ -21,7 +21,7 @@ function MainBanner() {
       <div
         style={{
           width:'100%',
-          height:'360px',
+          height:'145px',
           backgroundColor:'#ffffff50',
         }}
       />

@@ -35,7 +35,7 @@ function ClubNotice() {
                 shape='circle' 
                 className="c-n-m-button"
                 style={{
-                    width:'27px',
+                    minWidth:'27px',
                     height:'27px',
                     backgroundColor:'#50607030',
                     border:'none',

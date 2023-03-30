@@ -34,7 +34,7 @@ a{
     z-index: 10;
 }
 .headerLogo{
-    width: 56px;
+    min-width: 56px;
     height: 16px;
     background-color: rgba(0, 0, 0, 0);
     background-image: url("../img/그룹 6926.svg");
@@ -46,12 +46,14 @@ a{
     transform: translateX(-50%);
 }
 .headerProfile{
-    width: 30px;
-    height: 30px;
+    clear: both;
+    /* width: 24px;
+    height: 24px; */
     background: transparent linear-gradient(138deg, #C9C9C9 0%, #506070 100%) 0% 0% no-repeat padding-box;
     border-radius: 50%;
     background-image: url("../img/마스크 그룹 67.png");
     background-size: cover;
+    /* background-size: 24px 24px; */
     position: absolute;
     top: 5px;
     right: 13px;
@@ -170,7 +172,7 @@ a{
     color: #EEEEEE;
 }
 #main .sport-panel{
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: #6F777E;
     line-height: 42px;
@@ -227,16 +229,111 @@ a{
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/* DividendBoard */
+.DividendBoard{
+    padding: 0 16px;
+}
+.DividendBoard .nation{
+    /* color: red; */
+    margin: 0 5px 0 -8px;
+}
+.DividendBoard .nation::before{
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 14px;
+    /* height: 100%; */
+    background-image: url('../img/그룹 6878.png');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(2px);
+    margin-right: 4px;
+}
+.DividendBoard .league::before{
+    display: inline-block;
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-image: url('../img/AF3C5242-9094-4858-AE2A-16E13F8F4C0C.png');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(3px);
+    margin-right: 4px;
+}
+.DividendBoard .league::after{
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-top: 1.5px solid #506070;
+    border-right: 1.5px solid #506070;
+    transform: rotate(45deg) translateY(-4px);
+}
+.d-b-board{
+    width: 100%;
+    height: 200px;
+    background-color: #212732;
+    border: 1px solid #40506080;
+    border-radius: 18px;
+    position: relative;
+}
+.d-b-board > div::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgb(28, 32, 43);
+    box-shadow: 0px 1px 1px #40506033;
+    position: absolute;
+    top: 40px;
+}
+.d-b-board .date{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /* margin-right: 2px; */
+    color: rgb(111, 119, 126);
+    margin-left: 10px;
+    /* margin: 30px 0 0 5px; */
+    /* font-size: 1.2rem; */
+    font-size: 12px;
+    font-weight: 500;
+}
+.d-b-board .date > span{
+    margin-left: 5px;
+    color: rgb(238, 238, 238);;
+}
+.d-b-board .d-b-btn-group{
+    display: flex;
+    width: 100%;
+    padding: 0 14px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.d-b-board .d-b-btn{
+    width: calc((100% - 16px) / 3);
+    height: 36px;
+    border: none;
+    border-radius: 19px;
+    background-color: #1C202B;
+    color: #6F777E;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 36px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.ant-radio-button-wrapper:not(:first-child)::before{
+    display: none;
 }
