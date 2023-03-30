@@ -19,8 +19,7 @@ function App() {
       <MainBanner />
       <DividendBoard />
       <DividendBoard />
-      <DividendBoard />
-      <DividendBoard />
+      <DividendBoard/>
       <BottomBar />
     </div>
   );

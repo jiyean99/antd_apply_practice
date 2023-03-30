@@ -38,20 +38,6 @@ function MatchTab() {
                     <a href="#">기타</a>
                 </li>
             </ul>
-            {/* <ul className="panel-tab">
-                <li className="panel-tab-active">
-                    <a href="#" className="all">전체<span>52</span></a>
-                </li>
-                <li>
-                    <a href="#" className="main">주요<span>21</span></a>
-                </li>
-                <li>
-                    <a href="#" className="favorite"><span>3</span></a>
-                </li>
-                <li>
-                    <a href="#"  className="panel-tab-btn"></a>
-                </li>
-            </ul> */}
             <div
                 className='p-t-box'
                 style={{
@@ -60,50 +46,14 @@ function MatchTab() {
                 }}
             >
                 <Radio.Group buttonStyle="solid" defaultValue="a">
-                    <Radio.Button 
-                        value="a"
-                        style={{
-                            width: '80px',
-                            height:'34px',
-                            borderRadius: '17px',
-                            backgroundColor:'#50607020',
-                            border:'1px solid #50607080',
-                            color:'#eee',
-                            fontSize:'12px',
-                            marginRight:'9px',
-                        }}
-                    >
-                        전체<span style={{marginLeft:"12px"}}>52</span>
+                    <Radio.Button value="a" className='match-all-btn'>
+                        <span>전체</span><span className='match-all-btn-num'>52</span>
                     </Radio.Button>
-                    <Radio.Button 
-                        value="b"
-                        style={{
-                            width: '80px',
-                            height:'34px',
-                            borderRadius: '17px',
-                            backgroundColor:'#50607020',
-                            border:'1px solid #50607080',
-                            color:'#eee',
-                            fontSize:'12px',
-                            marginRight:'9px',
-                        }}
-                    >
-                        주요<span style={{marginLeft:"12px"}}>52</span>
+                    <Radio.Button value="b" className='match-major-btn'>
+                        <span>주요</span><span className='match-all-btn-num'>52</span>
                     </Radio.Button>
-                    <Radio.Button 
-                        value="c"
-                        style={{
-                            width: '66px',
-                            height:'34px',
-                            borderRadius: '17px',
-                            backgroundColor:'#50607020',
-                            border:'1px solid #50607080',
-                            color:'#eee',
-                            fontSize:'12px',
-                        }}
-                    >
-                        <span className="panel-tab-icon"/>
-                        <span>3</span>
+                    <Radio.Button value="c" className='match-fav-btn'>
+                        <span className='matcn-fav-icon'></span><span className='match-fav-btn-num'>3</span>
                     </Radio.Button>
                 </Radio.Group>
                 <Button shape='circle'className="panel-tab-btn" style={{ minWidth:'30px',height:'30px'}}/>

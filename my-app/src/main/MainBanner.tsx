@@ -19,14 +19,33 @@ function MainBanner() {
     // swiper 경로 오류로 인해 크기만 맞춰놓고 수정 예정
     <div className="MainBanner">
       <div
-        style={{
-          width:'100%',
-          height:'145px',
-          backgroundColor:'#ffffff50',
-        }}
-      />
-      {/* <section id="banner">
-        <Swiper className="mySwiper">
+        // style={{
+        //   width:'100%',
+        //   height:'145px',
+        //   backgroundColor:'#ffffff50',
+        // }}
+      >
+        <ul className='banner-list'>
+          <li>
+            <a href="#" className='banner-img1'>
+            </a>
+          </li>
+          <li>
+            <a href="#" className='banner-img2'>
+            </a>
+          </li>
+          <li>
+            <a href="#" className='banner-img3'>
+            </a>
+          </li>
+          <li>
+            <a href="#" className='banner-img4'>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section id="banner">
+        {/* <Swiper className="mySwiper">
           <SwiperSlide>Slide 1</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
@@ -36,8 +55,8 @@ function MainBanner() {
           <SwiperSlide>Slide 7</SwiperSlide>
           <SwiperSlide>Slide 8</SwiperSlide>
           <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper>
-      </section> */}
+        </Swiper> */}
+      </section>
     </div>
   );
 }
