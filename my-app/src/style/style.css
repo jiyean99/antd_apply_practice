@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #eeeeee;
+    background-color: #1C202B;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+    line-height: 0;
+}
+/* ZHeader */
+.ZHeader{
+    height: 40px;
+    background-color: #1C202B;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.headerLogo{
+    width: 56px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/그룹 6926.svg");
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: 12px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.headerProfile{
+    width: 30px;
+    height: 30px;
+    background: transparent linear-gradient(138deg, #C9C9C9 0%, #506070 100%) 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    background-image: url("../img/마스크 그룹 67.png");
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    transform: translateX(-50%);
+}
+/* NoticeBar */
+.NoticeBar{
+    display: flex;
+}
+.notice-bar-icon{
+    width: 30px;
+    height: 21px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    display: block;
+    margin: 10px 0 0 18px;
+    position: relative;
+}
+.notice-bar-icon::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 21px;
+    background: transparent url('../img/그룹 8458.svg') 50% 50% no-repeat padding-box;
+}
+.notice-bar-icon::after{
+    content: '3';
+    display: block;
+    color: #141414;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900;
+    width: 17px;
+    height: 17px;
+    line-height: 14px;
+    background-color: #eee;
+    border: 2px solid #2c3340;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+}
+/* ClubNotice */
+.ClubNotice{
+    width: 100%;
+    height: 42px;
+    padding: 0 14px;
+}
+.ClubNotice > div{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.c-n-text{
+    font-size: 14px;
+    color: #eeeeee;
+    font-weight: 700;
+}
+.c-n-e-button{
+    /* font-size: 10px; */
+    font-weight: bold;
+    color: #1C202B;
+    background-color: #ffcc00;
+    border: none;
+    height: 21px;
+    margin-left: 15px;
+}
+.c-n-e-badge{
+    transform: translateY(-10px);
+}
+.c-n-m-button{
+    background-image: url("../img/그룹 6863.svg");
+    background-size: 13px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 55px;
+}
+/* main */
+#main{
+    width: 100%;
+    background-color: #1C202B;
+    position: relative;
+}
+#main .main-tab{
+    /* text-align: center; */
+    /* width: 30%; */
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #EEEEEE42;
+}
+#main .main-tab > li{
+    /* padding: 0 18px; */
+    font-weight: 700;
+}
+#main .main-tab > li >a{
+    display: block;
+    padding: 0 18px;
+}
+#main .main-tab::after{
+    content: '';
+    width: 1px;
+    height: 16px;
+    display: block;
+    background-color: #506070;
+    opacity: 50%;
+    position: absolute;
+    left: 50%;
+}
+.main-tab-on{
+    color: #EEEEEE;
+}
+#main .sport-panel{
+    font-size: 12px;
+    font-weight: 600;
+    color: #6F777E;
+    line-height: 42px;
+    max-width: 100%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0 9px;
+    border-bottom: 1px solid #50607050;
+}
+#main .sport-panel > li{
+    padding: 0 9px;
+    position: relative;
+}
+#main .sport-panel > li > a{
+    width: 100%;
+    display: block;
+    padding: 0 3px;
+    transform: translateX(-3px);
+}
+.p-t-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.panel-tab-icon{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background: url('../img/favoriteManage.png') no-repeat;
+    background-size: 11px 11px;
+    margin-right: 15px;
+    /* background-position: center left 14px; */
+}
+.panel-tab-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/그룹\ 6908.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dddddd;
+    border-radius: 17px;
+}
+#banner{
+    position: relative;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

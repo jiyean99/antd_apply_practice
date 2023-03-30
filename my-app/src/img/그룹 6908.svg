@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="그룹_6908" data-name="그룹 6908" transform="translate(-322 -188)">
+    <rect id="사각형_6584" data-name="사각형 6584" width="18" height="18" transform="translate(322 188)" fill="red" opacity="0"/>
+    <g id="그룹_5361" data-name="그룹 5361" transform="translate(34.286 10.321)">
+      <g id="사각형_5486" data-name="사각형 5486" transform="translate(289 181.286)" fill="none" stroke="#1c202b" stroke-width="1">
+        <rect width="15.429" height="1" rx="0.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="14.429" fill="none"/>
+      </g>
+      <g id="사각형_5487" data-name="사각형 5487" transform="translate(289 186.572)" fill="none" stroke="#1c202b" stroke-width="1">
+        <rect width="15.429" height="1" rx="0.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="14.429" fill="none"/>
+      </g>
+      <g id="사각형_5488" data-name="사각형 5488" transform="translate(289 191.286)" fill="none" stroke="#1c202b" stroke-width="1">
+        <rect width="15.429" height="1" rx="0.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="14.429" fill="none"/>
+      </g>
+      <g id="사각형_5489" data-name="사각형 5489" transform="translate(291 179.786)" fill="#ddd" stroke="#1c202b" stroke-width="1">
+        <rect width="4" height="4" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3" height="3" rx="1.5" fill="none"/>
+      </g>
+      <g id="사각형_5492" data-name="사각형 5492" transform="translate(298.414 185)" fill="#ddd" stroke="#1c202b" stroke-width="1">
+        <rect width="4" height="4" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3" height="3" rx="1.5" fill="none"/>
+      </g>
+      <g id="사각형_5493" data-name="사각형 5493" transform="translate(291 189.572)" fill="#ddd" stroke="#1c202b" stroke-width="1">
+        <rect width="4" height="4" rx="2" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3" height="3" rx="1.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

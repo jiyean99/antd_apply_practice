@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="30.991" viewBox="0 0 31 30.991">
+  <defs>
+    <filter id="패스_6725" x="0" y="0" width="31" height="30.991" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#eee" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29aa63"/>
+      <stop offset="1" stop-color="#19a0af"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_17530" data-name="그룹 17530" transform="translate(-303 -530.004)">
+    <g transform="matrix(1, 0, 0, 1, 303, 530)" filter="url(#패스_6725)">
+      <path id="패스_6725-2" data-name="패스 6725" d="M780.841-546.674c.145-.877.282-1.715.421-2.553.1-.615.213-1.229.306-1.846a.565.565,0,0,0-.071-.332,10.966,10.966,0,0,1-1.388-6.58,10.755,10.755,0,0,1,1.907-5.152,10.912,10.912,0,0,1,4.566-3.783,10.8,10.8,0,0,1,4.915-.94,10.76,10.76,0,0,1,5.534,1.763,10.893,10.893,0,0,1,4.211,5.1,10.762,10.762,0,0,1,.75,5.241,10.763,10.763,0,0,1-1.962,5.223,10.89,10.89,0,0,1-4.569,3.732,10.883,10.883,0,0,1-5.276.892,11.127,11.127,0,0,1-4.619-1.416.6.6,0,0,0-.362-.053c-1.339.216-2.676.444-4.014.667C781.093-546.7,780.994-546.692,780.841-546.674Z" transform="translate(-775.55 572.37)" fill="#eee"/>
+    </g>
+    <rect id="사각형_5324" data-name="사각형 5324" width="3.2" height="3.2" rx="1.6" transform="translate(311.399 543.898)" fill="url(#linear-gradient)"/>
+    <rect id="사각형_5328" data-name="사각형 5328" width="3.2" height="3.2" rx="1.6" transform="translate(322.399 543.898)" fill="url(#linear-gradient)"/>
+    <rect id="사각형_5327" data-name="사각형 5327" width="3.2" height="3.2" rx="1.6" transform="translate(316.899 543.898)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
