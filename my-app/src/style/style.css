@@ -366,6 +366,7 @@ a{
     font-size: 10px;
     font-weight: 600;
     line-height: 36px;
+    margin-bottom: 5px;
 }
 .d-b-board .d-b-btn span{
     display: flex;
@@ -388,7 +389,7 @@ a{
     z-index: 50;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 10px 30px;
     font-size: 10px;
     color: #6F777E;
     text-align: center;
@@ -435,4 +436,28 @@ a{
     background: url('../img/그룹 6958.svg') no-repeat;
     background-size: contain;
     background-position: center;
+}
+.bottom-btn{
+    width: 47px;
+    height: 47px;
+    background: transparent linear-gradient(318deg, #2B323E 0%, #1C202B 82%, #1C202B 100%);
+    border: 1px solid #272D38;
+    margin-top: -5px;
+    font-size: 14px;
+    color: #AAFF00;
+}
+.bottom-btn span{
+    display: block;
+}
+.bottom-btn-date{
+    font-size: 10px;
+    color: #eee;
+}
+.bottom-btn-date::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 1px;
+    background: transparent linear-gradient(314deg, #EEEEEE 0%, #676C75 100%) 0% 0% no-repeat padding-box;
+    margin: 0 auto;
 }
