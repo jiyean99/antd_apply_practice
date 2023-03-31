@@ -541,7 +541,7 @@ a{
     border-left: 4px solid transparent;
     position: absolute;
     top: 50%;
-    left: -11px;
+    right: -11px;
     transform: translateY(-50%);
 }
 .ant-radio-button-wrapper:not(:first-child)::before{
