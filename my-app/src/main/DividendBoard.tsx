@@ -59,20 +59,20 @@ function DividendBoard() {
                     <Radio.Button value="d" className='d-b-btn'>
                         <span>홈 승</span><span className='d-b-num'>1.93</span>
                     </Radio.Button>
-                    <Radio.Button value="e" className='d-b-btn'>
-                        <span>H</span><span>0.5</span>
+                    <Radio.Button value="e" className='d-b-btn accodian'>
+                        <span className='aco-position'>H</span><span className='aco-num'>0.5</span>
                     </Radio.Button>
                     <Radio.Button value="f" className='d-b-btn'>
                         <span className='d-b-num'>1.93</span><span>원정 승</span>
                     </Radio.Button>
                     <Radio.Button value="g" className='d-b-btn'>
-                        <span>언더</span><span className='d-b-num'>1.18</span>
+                        <span>언더</span><span className='d-b-num d-b-under'>1.18</span>
                     </Radio.Button>
-                    <Radio.Button value="h" className='d-b-btn'>
-                        <span>U/O</span><span >2.5</span>
+                    <Radio.Button value="h" className='d-b-btn accodian'>
+                        <span className='aco-position'>U/O</span><span className='aco-num'>2.5</span>
                     </Radio.Button>
-                    <Radio.Button value="i" className='d-b-btn'>
-                        <span className='d-b-num'>1.93</span><span>오버</span>
+                    <Radio.Button value="i" className='d-b-btn '>
+                        <span className='d-b-num d-b-over'>1.93</span><span>오버</span>
                     </Radio.Button>
                 </Radio.Group>
             </div>
