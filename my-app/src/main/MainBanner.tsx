@@ -16,15 +16,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 function MainBanner() {
   return (
-    // swiper 경로 오류로 인해 크기만 맞춰놓고 수정 예정
     <div className="MainBanner">
-      <div
-        // style={{
-        //   width:'100%',
-        //   height:'145px',
-        //   backgroundColor:'#ffffff50',
-        // }}
-      >
+      <div>
         <ul className='banner-list'>
           <li>
             <a href="#" className='banner-img1'>
