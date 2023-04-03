@@ -1,4 +1,6 @@
 // import $ from 'jquery';
+import React from 'react';
+import $ from 'jquery';
 import 'jquery';
 // import $ from '../../node_modules/@types/jquery';
 
