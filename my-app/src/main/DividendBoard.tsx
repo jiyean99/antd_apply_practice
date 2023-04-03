@@ -2,18 +2,10 @@ import '../App.css';
 import '../style/style.css';
 import { Button, Radio } from 'antd';
 import { Typography } from 'antd';
-import { Collapse } from 'antd';
 // import { useState } from "react"
 import React, { useState } from "react";
-import { RadioChangeEvent } from 'antd/lib/radio';
-
-const { Panel } = Collapse;
-
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
+// import { RadioChangeEvent } from 'antd/lib/radio';
+import { RadioChangeEvent } from 'antd/es/radio';
 
 
 const { Text } = Typography;
@@ -23,11 +15,13 @@ function DividendBoard() {
     
     const [disabled, setDisabled] = useState([false, false, false, false, false, false, false]);
     
-    // // 기존 e가 any타입으로 지정되어있어 e를 명시적으로 지정해주면서 추가적으로 RadioChangeEvent를 import 하였습니다
+    // 기존 e가 any타입으로 지정되어있어 e를 명시적으로 지정해주면서 추가적으로 RadioChangeEvent를 import 하였습니다
     const onChange = (e: RadioChangeEvent) => {
       if (e.target.value === 1) {
-        setDisabled([true, true, false, false, false, false, false]);
-      } else {
+        setDisabled([false, true, true, true, true, true, true]);
+      } else if (e.target.value === 2){
+        setDisabled([false, false, false, false, false, false, false]);
+      } else if(e.target.value === 3){
         setDisabled([false, false, false, false, false, false, false]);
       }
     };

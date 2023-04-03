@@ -9,19 +9,6 @@ function MatchTab() {
     // maintab 관련 스크립트
     const mainTabList = document.querySelectorAll(".main-tab > li");
 
-    // for (let i = 0; i < mainTabList.length; i++) {
-    //   mainTabList[i].addEventListener("click", function (e) {
-    //     e.preventDefault();
-    
-    //     for (let j = 0; j < mainTabList.length; j++) {
-    //       mainTabList[j].classList.remove("main-tab-on");
-    //     }
-    
-    //     this.classList.add("main-tab-on");
-    //   });
-    // }
-    
-    // 위 스크립트가 적용되나 this에서 오류가 발생하여 아래의 스크립트로 재작성
     mainTabList.forEach((li) => {
         li.addEventListener('click', (event) => {
             event.preventDefault();
@@ -36,13 +23,13 @@ function MatchTab() {
     const sportPanelList = document.querySelectorAll('.sport-panel > li');
 
     sportPanelList.forEach((li) => {
-    li.addEventListener('click', (event) => {
-        event.preventDefault();
-        sportPanelList.forEach((li) => {
-            li.classList.remove('tab-active');
+        li.addEventListener('click', (event) => {
+            event.preventDefault();
+            sportPanelList.forEach((li) => {
+                li.classList.remove('tab-active');
+            });
+            li.classList.add('tab-active');
         });
-        li.classList.add('tab-active');
-    });
     });
 
   return (
