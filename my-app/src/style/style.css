@@ -202,9 +202,9 @@ a{
 .ant-radio-button-wrapper:hover{
     color: none;
 }
-a:hover{
+/* a:hover{
     color: #eee;
-}
+} */
 /* .main-tab > li > a:hover{
     color: #eee;
 }
@@ -300,7 +300,33 @@ a:hover{
     left: 50%;
     transform: translateX(-50%);
 }
-.sport-panel > li:hover ::after{
+/* 기존 css */
+/* .sport-panel > li:hover ::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #AAFF00;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+.main-tab-on{
+    color: #eee;
+}
+.main-tab-on a{
+    color: #eee;
+}
+.tab-active{
+    color: #eee;
+    position: relative;
+}
+.tab-active a{
+    color: #eee;
+}
+.tab-active::after{
     content: '';
     display: block;
     width: 100%;
