@@ -36,6 +36,9 @@ function DividendBoard() {
                 >
                     12/10(화)<span>04:00</span>
                 </Text>
+                <a href="#" className='d-b-icon1'></a>
+                <a href="#" className='d-b-icon2'></a>
+                <a href="#" className='d-b-icon3'>+13</a>
             </div>
             <div>
                 <div>
