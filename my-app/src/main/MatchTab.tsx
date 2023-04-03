@@ -1,7 +1,7 @@
 import '../App.css';
 import '../style/style.css'
-import '../js/index.d.ts'
-import '../js/index.js'
+// import '../js/index.d.ts'
+// import '../js/index.js'
 import { Radio, Button } from 'antd';
 
 
@@ -9,7 +9,7 @@ function MatchTab() {
   return (
     <div className="MatchTab">
         <section id="main">
-            <Radio.Group defaultValue="mainTab1" className="mainTabWrap">
+            {/* <Radio.Group defaultValue="mainTab1" className="mainTabWrap">
                 <Radio.Button value="mainTab1" className='mainTabBtn'>
                     스포츠
                 </Radio.Button>
@@ -39,9 +39,17 @@ function MatchTab() {
                 <Radio.Button value="sportpanel7" className='sportPanelBtn'>
                     기타
                 </Radio.Button>
-            </Radio.Group>
+            </Radio.Group> */}
             {/* 기존 html에 작성되어있던 태그 */}
-            {/* <ul className="sport-panel">
+            <ul className="main-tab">
+                <li className="main-tab-on">
+                    <a href="#">스포츠</a>
+                </li>
+                <li>
+                    <a href="#">라이브</a>
+                </li>
+            </ul>
+            <ul className="sport-panel">
                 <li>
                     <a href="#">전체</a>
                 </li>
@@ -63,7 +71,7 @@ function MatchTab() {
                 <li>
                     <a href="#">기타</a>
                 </li>
-            </ul> */}
+            </ul>
             <div
                 className='p-t-box'
                 style={{
