@@ -1,7 +1,7 @@
 import '../App.css';
 import '../style/style.css'
-// import '../js/script.js';
-import ScriptProps from 'app-jqery-script';
+import '../js/index.d.ts'
+import '../js/index.js'
 import { Radio, Button } from 'antd';
 
 
@@ -40,6 +40,7 @@ function MatchTab() {
                     기타
                 </Radio.Button>
             </Radio.Group>
+            {/* 기존 html에 작성되어있던 태그 */}
             {/* <ul className="sport-panel">
                 <li>
                     <a href="#">전체</a>

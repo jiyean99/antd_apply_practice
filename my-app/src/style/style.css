@@ -211,6 +211,7 @@ a{
 .main-tab > li > a:active{
     color: #eee;
 } */
+/* 기존 스크립트에서 적용되도록 작성한 css */
 /* .tab-active{
     color: #eee;
     position: relative;

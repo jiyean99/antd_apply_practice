@@ -1,7 +1,3 @@
-declare module "app-jqery-script" {
-    export default class Script extends React.Component<ScriptProps , ang>{}
+/// <reference types="jquery" />
 
-    interface ScriptProps {
-        // WebView: Comment<WebviewProps $ p>
-    }
-}
+export = jQuery;
