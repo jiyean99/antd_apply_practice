@@ -166,7 +166,7 @@ a{
     display: block;
     padding: 0 18px;
 }
-#main .main-tab::after{
+.mainTabWrap::after{
     content: '';
     width: 1px;
     height: 16px;
@@ -176,10 +176,33 @@ a{
     position: absolute;
     left: 50%;
 }
-.main-tab-on{
+.mainTabWrap{
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.mainTabBtn{
+    background-color: inherit;
+    border: none;
+    display: block;
+    color: #EEEEEE42;
+    padding: 0 16px;
+    font-weight: 700;
+}
+.mainTabBtn.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    background-color: inherit;
     color: #eee;
 }
-.main-tab > li > a:hover{
+.ant-radio-button-wrapper:hover{
+    color: #EEEEEE42;
+}
+.ant-radio-button-wrapper:hover{
+    color: none;
+}
+/* .main-tab > li > a:hover{
     color: #eee;
 }
 .main-tab > li > a:focus{
@@ -187,8 +210,8 @@ a{
 }
 .main-tab > li > a:active{
     color: #eee;
-}
-.tab-active{
+} */
+/* .tab-active{
     color: #eee;
     position: relative;
 }
@@ -203,7 +226,7 @@ a{
     bottom: -1px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 .sportPanelWrap{
     font-size: 11px;
     font-weight: 600;
@@ -239,6 +262,15 @@ a{
     color: #eee;
     background-color: inherit;
     border-color: none;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within{
+    outline: none;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active{
+    border-color: none !important;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover{
+    border-color:  #1C202B !important;
 }
 .sportPanelBtn.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active{
     color: #eee;

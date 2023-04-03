@@ -9,14 +9,14 @@ function MatchTab() {
   return (
     <div className="MatchTab">
         <section id="main">
-            <ul className="main-tab">
-                <li className="main-tab-on">
-                    <a href="#">스포츠</a>
-                </li>
-                <li>
-                    <a href="#">라이브</a>
-                </li>
-            </ul>
+            <Radio.Group defaultValue="mainTab1" className="mainTabWrap">
+                <Radio.Button value="mainTab1" className='mainTabBtn'>
+                    스포츠
+                </Radio.Button>
+                <Radio.Button value="mainTab2" className='mainTabBtn'>
+                    라이브
+                </Radio.Button>
+            </Radio.Group>
             <Radio.Group defaultValue="sportpanel2" className='sportPanelWrap'>
                 <Radio.Button value="sportpanel1" className='sportPanelBtn'>
                     전체
