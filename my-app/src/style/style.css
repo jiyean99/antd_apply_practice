@@ -202,6 +202,9 @@ a{
 .ant-radio-button-wrapper:hover{
     color: none;
 }
+a:hover{
+    color: #eee;
+}
 /* .main-tab > li > a:hover{
     color: #eee;
 }
