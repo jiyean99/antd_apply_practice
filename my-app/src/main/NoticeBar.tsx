@@ -21,6 +21,7 @@ function NoticeBar() {
             style={{
                 margin:'10px 50px 0 10px',
                 color:'#fff',
+                fontSize:'12px',
             }}
         >
             '꼴지 탈출+리그 첫 승'맨유, 리버풀 2-1 격파 '래시포드 ,'꼴지 탈출+리그 첫 승'맨유, 리버풀 2-1 격파 '래시포드

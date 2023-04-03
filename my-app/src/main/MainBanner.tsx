@@ -37,8 +37,8 @@ function MainBanner() {
           </li>
         </ul>
       </div>
-      <section id="banner">
-        {/* <Swiper className="mySwiper">
+      {/* <section id="banner">
+        <Swiper className="mySwiper">
           <SwiperSlide>Slide 1</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
@@ -48,8 +48,8 @@ function MainBanner() {
           <SwiperSlide>Slide 7</SwiperSlide>
           <SwiperSlide>Slide 8</SwiperSlide>
           <SwiperSlide>Slide 9</SwiperSlide>
-        </Swiper> */}
-      </section>
+        </Swiper>
+      </section> */}
     </div>
   );
 }
