@@ -3,69 +3,54 @@ import '../style/style.css'
 // import '../js/index.d.ts'
 // import '../js/index.js'
 import { Radio, Button } from 'antd';
+import { useEffect } from 'react';
 
 
 function MatchTab() {
     // maintab 관련 스크립트
-    const mainTabList = document.querySelectorAll(".main-tab > li");
-
-    mainTabList.forEach((li) => {
-        li.addEventListener('click', (event) => {
+    useEffect(() => {
+        const mainTabList = document.querySelectorAll(".main-tab > li");
+        mainTabList.forEach((li) => {
+          const handleClick = (event) => {
             event.preventDefault();
             mainTabList.forEach((li) => {
-                li.classList.remove('main-tab-on');
+              li.classList.remove("main-tab-on");
             });
-            li.classList.add('main-tab-on');
+            li.classList.add("main-tab-on");
+          };
+          li.addEventListener("click", handleClick);
+          return () => {
+            li.removeEventListener("click", handleClick);
+          };
         });
-    });
+      }, []);
 
     // sporttab 관련 스크립트
-    const sportPanelList = document.querySelectorAll('.sport-panel > li');
-
-    sportPanelList.forEach((li) => {
-        li.addEventListener('click', (event) => {
-            event.preventDefault();
-            sportPanelList.forEach((li) => {
-                li.classList.remove('tab-active');
-            });
-            li.classList.add('tab-active');
+    useEffect(() => {
+        const sportPanelList = document.querySelectorAll('.sport-panel > li');
+    
+        function handleClick(event) {
+        event.preventDefault();
+        sportPanelList.forEach((li) => {
+            li.classList.remove('tab-active');
         });
-    });
+        event.currentTarget.classList.add('tab-active');
+        }
+    
+        sportPanelList.forEach((li) => {
+        li.addEventListener('click', handleClick);
+        });
+    
+        return () => {
+        sportPanelList.forEach((li) => {
+            li.removeEventListener('click', handleClick);
+        });
+        };
+    }, []);
 
   return (
     <div className="MatchTab">
         <section id="main">
-            {/* <Radio.Group defaultValue="mainTab1" className="mainTabWrap">
-                <Radio.Button value="mainTab1" className='mainTabBtn'>
-                    스포츠
-                </Radio.Button>
-                <Radio.Button value="mainTab2" className='mainTabBtn'>
-                    라이브
-                </Radio.Button>
-            </Radio.Group>
-            <Radio.Group defaultValue="sportpanel2" className='sportPanelWrap'>
-                <Radio.Button value="sportpanel1" className='sportPanelBtn'>
-                    전체
-                </Radio.Button>
-                <Radio.Button value="sportpanel2" className='sportPanelBtn'>
-                    축구
-                </Radio.Button>
-                <Radio.Button value="sportpanel3" className='sportPanelBtn'>
-                    농구
-                </Radio.Button>
-                <Radio.Button value="sportpanel4" className='sportPanelBtn'>
-                    야구
-                </Radio.Button>
-                <Radio.Button value="sportpanel5" className='sportPanelBtn'>
-                    배구
-                </Radio.Button>
-                <Radio.Button value="sportpanel6" className='sportPanelBtn'>
-                    아이스하키
-                </Radio.Button>
-                <Radio.Button value="sportpanel7" className='sportPanelBtn'>
-                    기타
-                </Radio.Button>
-            </Radio.Group> */}
             {/* 기존 html에 작성되어있던 태그 */}
             <ul className="main-tab">
                 <li id="mainTab" className="main-tab-on">
