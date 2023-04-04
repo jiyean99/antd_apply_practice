@@ -458,40 +458,23 @@ a{
 .MainBanner{
     max-width: 500%;
     height: 145px;
-    /* padding: 0 10px; */
-    /* height: 145px; */
-    /* min-height: 145px; */
-    /* margin-left: 10px; */
-    /* transform: translateX(10px); */
     padding: 0 0 0 10px;
 }
 .banner-list{
     max-width: 100%;
-    /* display: inline-flex; */
     display: flex;
     overflow: hidden;
     overflow-x: auto;
     flex-basis: 0 0 33.33%;
-    /* margin-left: 10px; */
-    /* height: 145px; */
     -ms-overflow-style: none;
 }
 .banner-list::-webkit-scrollbar{
     display:none;
- }
-/* .banner-list li{
-    max-width: 300px;
-} */
-/* .banner-list li{
-    display: flex;
-    flex-basis: 0 0 33.333%;
-} */
+}
+
 .banner-list li a{
     display: block;
-    /* width: 100%; */
     width: 235px;
-    /* height: 0; */
-    /* padding-top: 61.8%; */
     margin-right: 10px;
     height: 145px;
     border-radius: 15px;
@@ -515,6 +498,10 @@ a{
     background: url("../img/banner (1).png") no-repeat;
     background-size: contain;
     background-position: center center;
+}
+.flex-banner{
+    display: none; /* swiper 이용을 위한 display:none 처리*/
+    display: block;
 }
 /* #banner{
     position: relative;
@@ -886,4 +873,41 @@ a{
     height: 1px;
     background: transparent linear-gradient(314deg, #EEEEEE 0%, #676C75 100%) 0% 0% no-repeat padding-box;
     margin: 0 auto;
+}
+/* TopBtn */
+.ant-back-top {
+    border-radius: 23px;
+    background: #EEEEEE20;
+    backdrop-filter:  blur(20px);
+    position: fixed;
+    left: 18px;
+    bottom: 90px;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+}
+.ant-back-top::before{
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-radius: 1px;
+    transform:  translateX(-50%) rotate(-45deg);
+    position: absolute;
+    top: 16px;
+    left: 50%;
+}
+.ant-back-top::after{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 16px;
+    border-radius: 1px;
+    background-color: #eee;
+    position: absolute;
+    top: 14.5px;
+    left: 50%;
+    transform: translateX(-50%);
 }

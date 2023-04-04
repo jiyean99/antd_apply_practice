@@ -3,11 +3,12 @@ import '../style/style.css'
 // import '../js/index.d.ts'
 // import '../js/index.js'
 import { Radio, Button } from 'antd';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function MatchTab() {
     // maintab 관련 스크립트
+    // (event: MouseEvent) click이벤트를 수신하기위해 event 객체의 타입을 MouseEvent로 명시해보았으나 오류 발생
     useEffect(() => {
         const mainTabList = document.querySelectorAll(".main-tab > li");
         mainTabList.forEach((li) => {
@@ -23,7 +24,7 @@ function MatchTab() {
             li.removeEventListener("click", handleClick);
           };
         });
-      }, []);
+    }, []);
 
     // sporttab 관련 스크립트
     useEffect(() => {
