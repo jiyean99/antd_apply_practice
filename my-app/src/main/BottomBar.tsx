@@ -1,6 +1,6 @@
 import '../App.css';
 import '../style/style.css'
-import { Affix, Button, Radio } from 'antd';
+import { Affix, Button } from 'antd';
 
 function BottomBar() {
   return (

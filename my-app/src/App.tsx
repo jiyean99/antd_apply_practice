@@ -13,9 +13,6 @@ import DividendBoard from './main/DividendBoard';
 import BottomBar from './main/BottomBar'
 import FixedElement from './main/FixedElement'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
 function App() {
   return (
     <div className="App">

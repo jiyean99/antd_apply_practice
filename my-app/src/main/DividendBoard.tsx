@@ -17,14 +17,22 @@ function DividendBoard() {
     
     // 기존 e가 any타입으로 지정되어있어 e를 명시적으로 지정해주면서 추가적으로 RadioChangeEvent를 import 하였습니다
     const onChange = (e: RadioChangeEvent) => {
-      if (e.target.value === 1) {
-        setDisabled([false, true, true, true, true, true, true]);
-      } else if (e.target.value === 2){
-        setDisabled([false, false, false, false, false, false, false]);
-      } else if(e.target.value === 3){
-        setDisabled([false, false, false, false, false, false, false]);
-      }
-    };
+        if (e.target.value === 1) {
+          setDisabled([false, true, true, true, true, true, true]);
+        } else if (e.target.value === 2){
+          setDisabled([false, false, false, true, true, false, false]);
+        } else if(e.target.value === 3){
+          setDisabled([false, false, false, true, true, false, true]);
+        }else if(e.target.value === 4){
+          setDisabled([true, true, true, false, false, false, false]);
+        }else if(e.target.value === 6){
+          setDisabled([true, true, true, false, false, false, false]);
+        }else if(e.target.value === 7){
+          setDisabled([false, false, false, false, false, false, false]);
+        }else if(e.target.value === 9){
+          setDisabled([false, false, false, false, false, false, false]);
+        }
+      };
 
   return (
     <div className="DividendBoard">
