@@ -896,6 +896,13 @@ a{
     background: transparent linear-gradient(314deg, #EEEEEE 0%, #676C75 100%) 0% 0% no-repeat padding-box;
     margin: 0 auto;
 }
+.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active{
+    background: transparent linear-gradient(318deg, #2B323E 0%, #1C202B 82%, #1C202B 100%);
+}
+.ant-btn:hover, .ant-btn:focus{
+    color: #AAFF00;
+    border: 1px solid #272D38;
+}
 /* TopBtn */
 .ant-back-top {
     border-radius: 23px;
