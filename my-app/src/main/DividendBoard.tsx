@@ -60,7 +60,7 @@ function DividendBoard() {
                 <a href="#" className='d-b-icon3'>+13</a>
             </div>
             <div>
-                <div className='l-t-box'>
+                <div>
                     <Text 
                     ellipsis className='league-table-group'>
                         <Text className='league-table-l'>토르페도 N.노브고로드</Text>
