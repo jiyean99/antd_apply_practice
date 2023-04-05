@@ -21,6 +21,7 @@ function App() {
       <ClubNotice />
       <MatchTab />
       <MainBanner />
+      <div style={{marginBottom: "35%"}}/>
       <DividendBoard />
       <DividendBoard />
       <DividendBoard/>

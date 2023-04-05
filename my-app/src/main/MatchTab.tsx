@@ -9,45 +9,45 @@ import { useEffect, useState } from 'react';
 function MatchTab() {
     // maintab 관련 스크립트
     // (event: MouseEvent) click이벤트를 수신하기위해 event 객체의 타입을 MouseEvent로 명시해보았으나 오류 발생
-    // useEffect(() => {
-    //     const mainTabList = document.querySelectorAll(".main-tab > li");
-    //     mainTabList.forEach((li) => {
-    //       const handleClick = (event) => {
-    //         event.preventDefault();
-    //         mainTabList.forEach((li) => {
-    //           li.classList.remove("main-tab-on");
-    //         });
-    //         li.classList.add("main-tab-on");
-    //       };
-    //       li.addEventListener("click", handleClick);
-    //       return () => {
-    //         li.removeEventListener("click", handleClick);
-    //       };
-    //     });
-    // }, []);
+    useEffect(() => {
+        const mainTabList = document.querySelectorAll(".main-tab > li");
+        mainTabList.forEach((li) => {
+          const handleClick = (event) => {
+            event.preventDefault();
+            mainTabList.forEach((li) => {
+              li.classList.remove("main-tab-on");
+            });
+            li.classList.add("main-tab-on");
+          };
+          li.addEventListener("click", handleClick);
+          return () => {
+            li.removeEventListener("click", handleClick);
+          };
+        });
+    }, []);
 
-    // // sporttab 관련 스크립트
-    // useEffect(() => {
-    //     const sportPanelList = document.querySelectorAll('.sport-panel > li');
+    // sporttab 관련 스크립트
+    useEffect(() => {
+        const sportPanelList = document.querySelectorAll('.sport-panel > li');
     
-    //     function handleClick(event) {
-    //     event.preventDefault();
-    //     sportPanelList.forEach((li) => {
-    //         li.classList.remove('tab-active');
-    //     });
-    //     event.currentTarget.classList.add('tab-active');
-    //     }
+        function handleClick(event) {
+        event.preventDefault();
+        sportPanelList.forEach((li) => {
+            li.classList.remove('tab-active');
+        });
+        event.currentTarget.classList.add('tab-active');
+        }
     
-    //     sportPanelList.forEach((li) => {
-    //     li.addEventListener('click', handleClick);
-    //     });
+        sportPanelList.forEach((li) => {
+        li.addEventListener('click', handleClick);
+        });
     
-    //     return () => {
-    //     sportPanelList.forEach((li) => {
-    //         li.removeEventListener('click', handleClick);
-    //     });
-    //     };
-    // }, []);
+        return () => {
+        sportPanelList.forEach((li) => {
+            li.removeEventListener('click', handleClick);
+        });
+        };
+    }, []);
 
   return (
     <div className="MatchTab">
