@@ -33,9 +33,10 @@ a{
 }
 /* ZHeader */
 .ZHeader{
+    width: 100%;
     height: 40px;
     background-color: #1C202B;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
 }
@@ -67,6 +68,7 @@ a{
 }
 /* NoticeBar */
 .NoticeBar{
+    margin-top: 40px;
     display: flex;
 }
 .notice-bar-icon{
@@ -123,15 +125,41 @@ a{
 }
 .c-n-e-button{
     /* font-size: 10px; */
+    width: 45px;
+    border-radius: 50px;
     font-weight: bold;
     color: #1C202B;
     background-color: #ffcc00;
     border: none;
     height: 21px;
     margin-left: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    line-height: 20px;
 }
 .c-n-e-badge{
-    transform: translateY(-10px);
+    background-color: red;
+    color: #fff;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #141414;
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: -7px;
+}
+.c-n-e-badge::after{
+    content: '2';
+    display: block;
+    width: 17px;
+    height: 17px;
+    color: #fff;
+    font-size: 10px;
+    transform: translate(-2.5px, -3.5px);
 }
 .c-n-m-button{
     background-image: url("../img/그룹 6863.svg");
@@ -142,8 +170,31 @@ a{
 }
 /* MatchTab */
 /* main */
+.sport-panel{
+    display: block;
+    top: 40px;
+    width: 100%;
+    height: 40px;
+    z-index: 50;
+    background-color: rgb(28, 32, 43);
+}
+.p-t-box{
+    display: block;
+    /* top: 80px; */
+    height: 54px;
+    /* z-index: 49; */
+    background-color: rgb(28, 32, 43);
+} 
+.MatchTab{
+    width: 100%;
+    height: 136px;
+    display: block;
+}
 #main{
     width: 100%;
+    height: 136px;
+    display: block;
+    z-index: 5;
     background-color: #1C202B;
     position: relative;
 }
@@ -339,8 +390,8 @@ a{
 .tab-active::after{
     content: '';
     display: block;
-    width: 100%;
-    height: 3px;
+    width: calc(100% - 15px);
+    height: 2px;
     border-radius: 3px;
     background-color: #AAFF00;
     position: absolute;
@@ -361,6 +412,7 @@ a{
     padding: 0 9px;
     border-bottom: 1px solid #50607050;
     text-align: center;
+    margin: 0;
 }
 #main .sport-panel > li{
     padding: 0 9px;
@@ -373,8 +425,16 @@ a{
 }
 .p-t-box{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
+}
+.match-btn-group{
+    display: flex;
+    align-items: center;
+}
+.ant-radio-button-wrapper:first-child{
+    /* border: inherit !important; */
+    border: 1px solid transparent;  
 }
 .p-t-box.ant-radio-button-wrapper:first-child ,.ant-radio-button-wrapper:first-child{
     border-color: #50607080;
@@ -457,12 +517,14 @@ a{
 /* MainBanner */
 .MainBanner{
     width: 100%;
+    display: block;
     position: absolute;
+    /* top: 260px; */
 }
 .MainBanner::after{
     content: '';
     display: block;
-    padding-bottom: 33.333%;
+    padding-bottom: 40%;
 }
 #banner{
     position: relative;
@@ -500,7 +562,12 @@ a{
 
 /* DividendBoard */
 .DividendBoard{
-    padding: 15px 16px;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 16px;
+    margin-bottom: 6px;
+    /* padding: 15px 16px; */
 }
 .DividendBoard .nation{
     /* color: red; */
@@ -706,7 +773,7 @@ a{
     content: '';
     width: 16px;
     height: 16px;
-    background-color: rgb(80, 96, 112);
+    background-color: rgba(80, 96, 112, 0.5);
     border-radius: 8px;
     position: absolute;
     top: 50%;
@@ -766,6 +833,15 @@ a{
     color: #FFCC00;
 }
 /* BottomBar */
+.bottom-on{
+    color: #eee;
+}
+.bottom-on svg{
+    fill: #eee !important;
+}
+.BottomBar svg{
+    fill: rgb(111, 119, 126);
+}
 .BottomBar{
     width: 100%;
     height: 62px;
@@ -783,46 +859,18 @@ a{
 }
 .main-btn, .pre-btn, .his-btn, .menu-bnt{
     text-align: center;
+    justify-content: center;
 }
-.BottomBar .main-btn::before{
+.BottomBar svg{
+    justify-content: center;
+    display: flex;
     margin: 0 auto;
-    content: '';
-    display: block;
-    width: 21px;
-    height: 21px;
-    background: url('../img/그룹 6966.svg') no-repeat;
-    background-size: contain;
-    background-position: center;
 }
-.BottomBar .pre-btn::before{
-    margin: 0 auto;
-    content: '';
-    display: block;
-    width: 21px;
-    height: 21px;
-    background: url('../img/그룹 6962.svg') no-repeat;
-    background-size: contain;
-    background-position: center;
+.css-17is1yn{
 }
-.BottomBar .his-btn::before{
-    margin: 0 auto;
-    content: '';
-    display: block;
-    width: 21px;
-    height: 21px;
-    background: url('../img/그룹 17857.png') no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-.BottomBar .menu-btn::before{
-    margin: 0 auto;
-    content: '';
-    display: block;
-    width: 21px;
-    height: 21px;
-    background: url('../img/그룹 6958.svg') no-repeat;
-    background-size: contain;
-    background-position: center;
+.BottomBar span{
+    justify-content: center;
+    display: flex;
 }
 .bottom-btn{
     width: 47px;

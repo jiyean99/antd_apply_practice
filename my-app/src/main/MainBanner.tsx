@@ -14,7 +14,7 @@ function MainBanner() {
     <div className="MainBanner">
       <section id="banner">
         <Swiper
-          slidesPerView={1.5}
+          slidesPerView={1.4}
           spaceBetween={14}
           loop={true}
           className="mySwiper"

@@ -47,6 +47,37 @@ function MatchTab() {
 
     }, []);
 
+    //scroll-sticky 관련 스크립트
+    const sportPanel = document.querySelector('.sport-panel') as HTMLElement;
+
+    const topOffset = 40;
+    
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      if (scrollPos >= topOffset) {
+        sportPanel.style.position = 'fixed';
+        sportPanel.style.top = `${topOffset}px`;
+      } else {
+        sportPanel.style.position = 'static';
+        sportPanel.style.top = 'auto';
+      }
+    });
+
+    const PTBox = document.querySelector('.p-t-box') as HTMLElement;
+
+    const topOffset2 = 80;
+    
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY;
+      if (scrollPos >= topOffset2) {
+        PTBox.style.position = 'fixed';
+        PTBox.style.top = `${topOffset2}px`;
+      } else {
+        PTBox.style.position = 'static';
+        PTBox.style.top = 'auto';
+      }
+    });
+    
   return (
     <div className="MatchTab">
         <section id="main">
@@ -89,7 +120,7 @@ function MatchTab() {
                     padding: '0 9px',
                 }}
             >
-                <Radio.Group buttonStyle="solid" defaultValue="all">
+                <Radio.Group buttonStyle="solid" defaultValue="all" className='match-btn-group'>
                     <Radio.Button value="all" className='match-all-btn'>
                         <span>전체</span><span className='match-all-btn-num'>52</span>
                     </Radio.Button>

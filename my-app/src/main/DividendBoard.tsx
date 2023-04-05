@@ -39,6 +39,7 @@ function DividendBoard() {
         <Button 
             type="link"
             style={{
+                height:'36px',
                 fontSize:'13px',
                 color:'#eee',
                 fontWeight:'500',

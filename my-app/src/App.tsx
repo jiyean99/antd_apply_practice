@@ -21,7 +21,7 @@ function App() {
       <ClubNotice />
       <MatchTab />
       <MainBanner />
-      <div style={{marginBottom: "35%"}}/>
+      <div style={{ paddingBottom: "calc(40% + 9px)"}}/>
       <DividendBoard />
       <DividendBoard />
       <DividendBoard/>
@@ -31,6 +31,8 @@ function App() {
       <DividendBoard/>
       <DividendBoard/>
       <DividendBoard/>
+      {/* <p style={{width:'100%', height:'1200px'}}/> */}
+      <div style={{height: "70px"}}/>
       <BottomBar />
       <FixedElement />
     </div>

@@ -11,12 +11,13 @@ function ClubNotice() {
         <div>
             <div>
                 <Text className="c-n-text">국가대표 365일</Text>
-                <Button 
+                {/* <Button 
                     shape='round' 
                     size="small" 
                     className="c-n-e-button"
                     style={{
-                        width:'58px',
+                        width:'45px',
+                        height:'22px',
                         fontSize:'12px',
                     }}
                 >
@@ -29,7 +30,10 @@ function ClubNotice() {
                             borderColor:'#1C202B',
                         }}
                     />
-                </Button>
+                </Button> */}
+            </div>
+            <div className="c-n-e-button">
+                이벤트<span className="c-n-e-badge"></span>
             </div>
             <Button
                 shape='circle' 
