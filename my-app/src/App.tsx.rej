@@ -1,0 +1,10 @@
+diff a/my-app/src/App.tsx b/my-app/src/App.tsx	(rejected hunks)
+@@ -8,8 +8,6 @@
+ import ClubNotice from './main/ClubNotice';
+ import NoticeBar from './main/NoticeBar';
+ import MatchTab from './main/MatchTab';
+-import MainBanner from './main/MainBanner';
+-import DividendBoard from './main/DividendBoard';
+ import BottomBar from './main/BottomBar'
+ import FixedElement from './main/FixedElement'
+ 

@@ -56,7 +56,15 @@ function DividendBoard() {
                     12/10(화)<span>04:00</span>
                 </Text>
                 <a href="#" className='d-b-icon1'></a>
-                <a href="#" className='d-b-icon2'></a>
+                <a href="#" className='d-b-icon2'>
+                    <div className='fav-icon-bg'/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" className="favorite-svg css-1ytxq94">
+                        <g id="그룹_6920" data-name="그룹 6920" transform="translate(-5250.5 -9377)">52
+                            <rect id="사각형_6593" data-name="사각형 6593" width="14" height="14" transform="translate(5257 9383)" fill="red" opacity="0"/>
+                            <path id="star" className="fill" d="M137.134,176.908a.885.885,0,0,0-.457-.124.863.863,0,0,0-.445.124.959.959,0,0,0-.309.346l-1.285,2.608a.3.3,0,0,1-.111.136.548.548,0,0,1-.173.074l-2.865.408a.836.836,0,0,0-.432.2.779.779,0,0,0-.259.383.83.83,0,0,0-.012.47.886.886,0,0,0,.235.408l2.075,2.015a.437.437,0,0,1,.086.161.252.252,0,0,1,.012.173l-.482,2.855a.905.905,0,0,0,.049.47.835.835,0,0,0,.284.371.935.935,0,0,0,.445.161.9.9,0,0,0,.457-.1L136.5,186.7a.346.346,0,0,1,.173-.049.3.3,0,0,1,.173.049l2.569,1.347a.827.827,0,0,0,.4.1.879.879,0,0,0,.506-.161.835.835,0,0,0,.284-.371.9.9,0,0,0,.049-.47l-.494-2.855a.412.412,0,0,1,.012-.173.651.651,0,0,1,.1-.161l2.075-2.015a.887.887,0,0,0,.235-.408.766.766,0,0,0-.025-.47.779.779,0,0,0-.259-.383.828.828,0,0,0-.42-.2l-2.865-.408a.548.548,0,0,1-.173-.074.3.3,0,0,1-.111-.136l-1.285-2.608a.958.958,0,0,0-.309-.346" transform="translate(5127.318 9207.535)" />
+                        </g>
+                    </svg>
+                </a>
                 <a href="#" className='d-b-icon3'>+13</a>
             </div>
             <div>
@@ -64,7 +72,7 @@ function DividendBoard() {
                     <Text 
                     ellipsis className='league-table-group'>
                         <Text className='league-table-l'>토르페도 N.노브고로드</Text>
-                        <span>vs</span>
+                        <span className='l-t-c'>vs</span>
                         <Text className='league-table-r'>SKA 상트페테르부르크</Text>
                     </Text>
                 </div>

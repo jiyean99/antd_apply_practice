@@ -68,8 +68,25 @@ a{
 }
 /* NoticeBar */
 .NoticeBar{
+    position: relative;
     margin-top: 40px;
     display: flex;
+    overflow: hidden;
+}
+.noticeBg{
+    width:calc(100% + 50px);
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    transform:translateX(-25px);
+    z-index: 0;
+}
+.ant-progress-success-bg, .ant-progress-bg{
+    background-color: transparent;
+}
+.ant-progress-status-active .ant-progress-bg::before{
+    animation:ant-progress-active 2.4s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+    /* animation-delay:3s; */
 }
 .notice-bar-icon{
     width: 30px;
@@ -473,13 +490,16 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.match-all-btn, .match-major-btn, .match-fav-btn{
+    font-weight: 600;
+    color: rgba(238, 238, 238,0.7);
+}
 .match-all-btn{
     width: 80px;
     height: 34px;
     font-size: 12px;
     border-radius: 17px !important;
     margin-right: 7px;
-
 }
 .match-major-btn{
     width: 80px;
@@ -645,9 +665,59 @@ a{
     background-position: center 5px;
 }
 .d-b-icon2{
-    background: url("../img/favoriteManage2.png") no-repeat;
-    background-size: 11px 11px;
-    background-position: center center;
+    position: relative;
+    /* cursor: pointer; */
+}
+.d-b-icon2 svg{
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-52%,-52%); */
+    fill: rgb(64, 80, 96);
+    position: relative;
+    z-index: 10;
+    /* animation-name: fav-ani;
+    animation-duration: 3s; */
+}
+.d-b-icon2:hover svg{
+    animation: bounceIn;
+    animation-duration: 1s;
+    --animate-repeat: 4;
+    fill: #fc0;
+}
+.fav-icon-bg{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 14px;
+    height: 14px;
+    box-sizing:border-box; 
+	border-style:solid; 
+	border-color:#fc0; 
+	border-radius:50%; 
+    opacity: 0;
+} 
+.d-b-icon2:hover .fav-icon-bg{
+    animation:clickEffect 0.8s ease-out; 
+}
+@keyframes clickEffect{ 
+	0%{ 
+		opacity:1; 
+        width: 0;
+        height: 0;
+		border-width:1.5px;
+	} 
+	80%{ 
+		opacity:0.8; 
+        width: 16px;
+        height: 16px;
+		border-width:1.5px;
+	} 
+    100%{ 
+        opacity:0; 
+    }
 }
 .d-b-icon3{
     color: #1C202B;
@@ -701,6 +771,9 @@ a{
     font-weight: 500;
     color: #eee;
 }
+.l-t-c{
+    color: rgb(80, 96, 112) !important;
+}
 .d-b-board .league-table-l::before{
     content: '';
     display: inline-block;
@@ -729,7 +802,7 @@ a{
     display: flex;
     width: 100%;
     padding: 0 14px;
-    margin: 4px 0 0 0;
+    /* margin: 4px 0 0 0; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -774,9 +847,11 @@ a{
     color: rgb(201, 201, 201);
 }
 .aco-num{
+    transform: translateX(-5px);
     color: rgb(170, 255, 0);
     position: relative;
     padding-right: 10px;
+    margin-left: auto;
 }
 .aco-num::before{
     display: block;
