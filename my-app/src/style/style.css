@@ -102,6 +102,8 @@ a{
 .ant-progress-status-active .ant-progress-bg::before{
     animation:ant-progress-active 2.4s cubic-bezier(0.23, 1, 0.32, 1) infinite;
     /* animation-delay:3s; */
+    animation-duration:5s;
+    animation-delay: 10s !important;
 }
 .notice-bar-icon{
     width: 30px;
@@ -697,9 +699,21 @@ a{
 .d-b-icon2:hover svg{
     animation: bounceIn;
     animation-duration: 1s;
-    --animate-repeat: 4;
+    --animate-repeat: 3;
     fill: #fc0;
 }
+.d-b-icon2:active svg{
+    animation: bounceIn;
+    animation-duration: 1s;
+    --animate-repeat: 3;
+    fill: #fc0;
+}
+/*.icon-click-ani{*/
+/*    animation: bounceIn;*/
+/*    animation-duration: 1s;*/
+/*    --animate-repeat: 4;*/
+/*    fill: #fc0;*/
+/*}*/
 .fav-icon-bg{
     position: absolute;
     top: 50%;
@@ -715,7 +729,7 @@ a{
     opacity: 0;
 }
 .d-b-icon2:hover .fav-icon-bg{
-    animation:clickEffect 0.8s ease-out;
+    /*animation:clickEffect 0.8s ease-out;*/
 }
 @keyframes clickEffect{
 	0%{
