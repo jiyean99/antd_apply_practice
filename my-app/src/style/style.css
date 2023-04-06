@@ -188,8 +188,9 @@ a{
 /* MatchTab */
 /* main */
 .sport-panel{
+    position: sticky;
     display: block;
-    top: 40px;
+    top: 39px;
     width: 100%;
     height: 40px;
     z-index: 50;
@@ -197,9 +198,10 @@ a{
 }
 .p-t-box{
     display: block;
-    /* top: 80px; */
+    position: sticky;
+    top: 78px;
     height: 54px;
-    /* z-index: 49; */
+    z-index: 50;
     background-color: rgb(28, 32, 43);
 } 
 .MatchTab{
@@ -619,11 +621,11 @@ a{
 .DividendBoard .league::after{
     display: inline-block;
     content: '';
-    width: 6px;
-    height: 6px;
-    border-top: 1.5px solid #506070;
-    border-right: 1.5px solid #506070;
-    transform: rotate(45deg) translateY(-4px);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #506070;
+    border-right: 2px solid #506070;
+    transform: rotate(45deg) translateY(-3px);
 }
 .ant-radio-disabled .ant-radio-inner {
     background-color: #f5f5f5;
@@ -639,7 +641,7 @@ a{
 }
 .d-b-board{
     width: 100%;
-    height: 200px;
+    height: 207px;
     background-color: #212732;
     border: 1px solid #40506080;
     border-radius: 18px;
@@ -660,7 +662,7 @@ a{
 .d-b-icon1{
     background: url("../img/그룹 6826.svg") no-repeat;
     background-size: 10px 14px;
-    background-position: center;
+    background-position: center 5px;
 }
 .d-b-icon2{
     position: relative;
@@ -683,7 +685,7 @@ a{
     --animate-repeat: 4;
     fill: #fc0;
 }
-.fav-icon-bg{ 
+.fav-icon-bg{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -691,30 +693,30 @@ a{
     display: block;
     width: 14px;
     height: 14px;
-    box-sizing:border-box; 
-	border-style:solid; 
-	border-color:#fc0; 
-	border-radius:50%; 
+    box-sizing:border-box;
+	border-style:solid;
+	border-color:#fc0;
+	border-radius:50%;
     opacity: 0;
-} 
-.d-b-icon2:hover .fav-icon-bg{
-    animation:clickEffect 0.8s ease-out; 
 }
-@keyframes clickEffect{ 
-	0%{ 
-		opacity:1; 
+.d-b-icon2:hover .fav-icon-bg{
+    animation:clickEffect 0.8s ease-out;
+}
+@keyframes clickEffect{
+	0%{
+		opacity:1;
         width: 0;
         height: 0;
 		border-width:1.5px;
-	} 
-	80%{ 
-		opacity:0.8; 
+	}
+	80%{
+		opacity:0.8;
         width: 16px;
         height: 16px;
 		border-width:1.5px;
-	} 
-    100%{ 
-        opacity:0; 
+	}
+    100%{
+        opacity:0;
     }
 }
 .d-b-icon3{
@@ -751,9 +753,14 @@ a{
     margin-left: 5px;
     color: rgb(238, 238, 238);;
 }
+.l-t-box{
+    height: 36px;
+}
 .d-b-board .league-table-group{
     width: calc(100% - 32px);
-    margin: 5px 0 0 10px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 10px;
     font-size: 12px;
     font-weight: 500;
     color: #eee;
@@ -777,6 +784,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(5px);
+    margin-right: 3px;
 }
 .d-b-board .league-table-r::before{
     content: '';
@@ -788,15 +796,13 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(5px);
+    margin-right: 3px;
 }
 .d-b-board .d-b-btn-group{
     display: flex;
     width: 100%;
     padding: 0 14px;
-<<<<<<< HEAD
-    /* margin: 4px 0 0 0; */
-=======
->>>>>>> cd1add512f606f28e065559bc0f5f86be84b8913
+    margin: 4px 0 0 0;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -821,7 +827,7 @@ a{
     color: rgba(0, 0, 0, 0.65) !important;
 }
 .d-b-board .d-b-btn.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
-        background-color: rgb(170, 255, 0);
+    background-color: rgb(170, 255, 0);
     color: rgba(0, 0, 0, 0.65) !important;
 }
 .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover .d-b-num{
@@ -911,6 +917,9 @@ a{
 .d-b-num{
     color: #FFCC00;
 }
+.DividendBoard:nth-of-type(11){
+    padding-bottom: 70px;
+}
 /* BottomBar */
 .bottom-on{
     color: #eee;
@@ -945,8 +954,7 @@ a{
     display: flex;
     margin: 0 auto;
 }
-.css-17is1yn{
-}
+
 .BottomBar span{
     justify-content: center;
     display: flex;
@@ -980,7 +988,7 @@ a{
 }
 .ant-btn:hover, .ant-btn:focus{
     color: #AAFF00;
-    border: 1px solid #272D38;
+    border-color: #272D38;
 }
 /* TopBtn */
 .ant-back-top {
