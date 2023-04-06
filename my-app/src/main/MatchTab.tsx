@@ -10,7 +10,6 @@ import DividendBoard from './DividendBoard';
 
 function MatchTab() {
     // maintab 관련 스크립트
-    // (event: MouseEvent) click이벤트를 수신하기위해 event 객체의 타입을 MouseEvent로 명시해보았으나 오류 발생 -> 더욱 범용적인 Event로 재작성
     useEffect(() => {
         const mainTabList = document.querySelectorAll(".main-tab > li");
 
@@ -49,37 +48,6 @@ function MatchTab() {
 
     }, []);
 
-    //scroll-sticky 관련 스크립트
-    // const sportPanel = document.querySelector('.sport-panel') as HTMLElement;
-    //
-    // const topOffset = 40;
-    //
-    // window.addEventListener('scroll', () => {
-    //   const scrollPos = window.scrollY;
-    //   if (scrollPos >= topOffset) {
-    //     sportPanel.style.position = 'fixed';
-    //     sportPanel.style.top = `${topOffset}px`;
-    //   } else {
-    //     sportPanel.style.position = 'static';
-    //     sportPanel.style.top = 'auto';
-    //   }
-    // });
-    //
-    // const PTBox = document.querySelector('.p-t-box') as HTMLElement;
-    //
-    // const topOffset2 = 80;
-    //
-    // window.addEventListener('scroll', () => {
-    //   const scrollPos = window.scrollY;
-    //   if (scrollPos >= topOffset2) {
-    //     PTBox.style.position = 'fixed';
-    //     PTBox.style.top = `${topOffset2}px`;
-    //   } else {
-    //     PTBox.style.position = 'static';
-    //     PTBox.style.top = 'auto';
-    //   }
-    // });
-    
   return (
     <div className="MatchTab">
         <section id="main">
