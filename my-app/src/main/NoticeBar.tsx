@@ -14,8 +14,9 @@ function NoticeBar() {
             backgroundColor: '#2C3340',
         }}
     >
-       <Progress percent={100} status="active" strokeColor={{from: '#2C3340',
-        to: '#2C3340',}} showInfo={false} className='noticeBg' strokeWidth={42}/>
+      <div className='notice-anibg'/>
+       {/*<Progress percent={100} status="active" strokeColor={{from: '#2C3340',*/}
+       {/* to: '#2C3340',}} showInfo={false} className='noticeBg' strokeWidth={42}/>*/}
       <Affix offsetTop={0} onChange={affixed => console.log(affixed)}>
         <div className="notice-bar-icon"/>
       </Affix>

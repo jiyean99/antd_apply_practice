@@ -10,7 +10,7 @@ import NoticeBar from './main/NoticeBar';
 import MatchTab from './main/MatchTab';
 import BottomBar from './main/BottomBar'
 import FixedElement from './main/FixedElement'
-import 'animate.css';
+// import 'animate.css';
 
 function App() {
   return (
