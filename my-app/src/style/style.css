@@ -614,6 +614,15 @@ button{
     margin-bottom: 6px;
     /* padding: 15px 16px; */
 }
+.ant-btn{
+    border: none;
+}
+.ant-btn:hover, .ant-btn:focus{
+    border: none;
+}
+.ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active{
+    background: none !important;
+}
 .DividendBoard .nation{
     /* color: red; */
     margin: 0 5px 0 -8px;
