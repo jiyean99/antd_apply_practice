@@ -5,8 +5,8 @@ import ReactDOM from "react-dom";
 import './App.css';
 // import Button from 'antd/es/button';
 import ZHeader from './main/ZHeader';
-import ClubNotice from './main/ClubNotice';
 import NoticeBar from './main/NoticeBar';
+import ClubNotice from './main/ClubNotice';
 import MatchTab from './main/MatchTab';
 import BottomBar from './main/BottomBar'
 import FixedElement from './main/FixedElement'
